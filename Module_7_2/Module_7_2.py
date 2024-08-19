@@ -8,6 +8,7 @@ def custom_write(file_name, strings):
         string_no += 1
         string_positions[(string_no, file.tell())] = string
         file.write(string + '\n')
+    file.close()
     return string_positions
 
 
